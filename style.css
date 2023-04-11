@@ -336,7 +336,9 @@ p {
   color: var(--light-font);
 }
 
-#round-1,#round-2,#round-3 {
+#round-1,
+#round-2,
+#round-3 {
   background-color: var(--primary);
   width: 96px;
   height: 96px;
@@ -349,7 +351,6 @@ p {
   position: absolute;
   top: 28%;
   left: 28%;
-
 }
 .aboutUs-card #round-2::before {
   content: url(img/box-vector.svg);
@@ -362,4 +363,94 @@ p {
   position: absolute;
   top: 28%;
   left: 28%;
+}
+/* Categories */
+.categories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.categories .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.categories .title p:first-child {
+  width: 182px;
+  height: 48px;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--dark);
+}
+.categories .title p:last-child {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--light-font);
+}
+.images {
+  margin-top: 96px;
+  height: 841px;
+  background-color: var(--primary);
+  width: 100vw;
+}
+.image-cards {
+  display: flex;
+  justify-content: center;
+  gap: 96px;
+  padding-top: 48px;
+}
+.image-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.image-card p {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--dark);
+  text-align: center;
+}
+.categories .description {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: var(--light-font);
+  padding-top: 12px;
+  padding-bottom: 24px;
+  width: 352px;
+  margin: 0 auto;
+}
+.categories .btn.white {
+  display: flex;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 8px;
+  width: 65px;
+  height: 27px;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--dark);
+  width: 147px;
+  height: 51px;
+  gap: 10px;
+}
+.categories .btn.white::after {
+  content: url(img/ArrowRight.svg);
+  transform: translateY(3px);
+}
+
+.images .image-cards .image-card:first-child {
+  transform: translateY(-96px);
+}
+.images .image-cards .image-card:last-child {
+  transform: translateY(-96px);
 }
