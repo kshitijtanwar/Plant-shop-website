@@ -1,0 +1,365 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary: #c1dcdc;
+  --dark: #1e1e1e;
+  --brand-heading: "Oranienbaum", serif;
+  --light-font: rgba(30, 30, 30, 0.5);
+}
+
+.wrapper {
+  max-width: 1248px;
+  margin: 0 auto;
+}
+header {
+  height: 1280px;
+}
+/* Hero Section */
+.btn {
+  width: 168px;
+  height: 51px;
+  background: var(--primary);
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--dark);
+  text-decoration: none;
+}
+
+header nav .logo {
+  font-family: var(--brand-heading);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--dark);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 44px 0;
+}
+nav .left {
+  display: flex;
+  gap: 96px;
+}
+nav .left ul {
+  margin-top: 0;
+  display: flex;
+  list-style: none;
+}
+nav .left ul {
+  gap: 48px;
+}
+nav .left ul a.active {
+  text-decoration: none;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #1e1e1e;
+}
+nav .left ul a {
+  text-decoration: none;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+  color: rgba(30, 30, 30, 0.5);
+}
+
+nav .right {
+  margin-top: 0;
+  display: flex;
+  gap: 48px;
+}
+
+.hero-section-box {
+  width: 1248px;
+  height: 512px;
+  background: var(--primary);
+  border-radius: 24px;
+  display: flex;
+  padding: 0 42px;
+  z-index: 1;
+  position: relative;
+}
+.hero-section-box .left {
+  flex: 1;
+}
+.hero-section-box .right img {
+  width: 411px;
+  height: 513.98px;
+  vertical-align: middle;
+  z-index: 3;
+  position: relative;
+}
+.hero-section-box .right::before {
+  position: absolute;
+  content: "";
+  z-index: 2;
+  background: var(--dark);
+  border-radius: 200px 200px 0px 200px;
+  top: 22%;
+  right: 5%;
+  width: 450px;
+  height: 400px;
+}
+.hero-section-box .right {
+  align-self: flex-end;
+}
+.hero-section-box img.arrow-1 {
+  position: absolute;
+  width: 150px;
+  height: 169.89px;
+  left: 45%;
+  top: 50%;
+  transform: rotate(-31.14deg);
+}
+.hero-section-box img.arrow-2 {
+  position: absolute;
+  width: 112.54px;
+  height: 154.41px;
+  left: 90%;
+  top: 1%;
+  transform: matrix(0.95, 0.31, -0.34, 0.94, 0, 0);
+}
+.hero-section-box .left h1 {
+  width: 512px;
+  height: 128px;
+  font-family: "Poppins";
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 64px;
+  color: #000000;
+}
+.plant-species {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+}
+.plant-species .info {
+  display: flex;
+  flex-direction: column;
+}
+.plant-species .info p {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 32px;
+  color: var(--dark);
+  margin: 0 0;
+}
+.plant-species .info span {
+  width: 122px;
+  height: 27px;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--dark);
+}
+.hero-section-box .achievements form input {
+  width: 449px;
+  height: 64px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: none;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: rgba(30, 30, 30, 0.5);
+  padding: 18px;
+}
+.hero-section-box .achievements form {
+  position: absolute;
+  margin-top: 48px;
+}
+
+.hero-section-box .achievements form button {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 393px;
+  top: 8px;
+  background: var(--primary);
+  border-radius: 12px;
+  border: none;
+}
+
+/* Top Selling Plants */
+.topSelling-plants {
+  display: flex;
+  margin-top: 97px;
+  width: 256px;
+  height: 264px;
+  gap: 60px;
+}
+.plant-cards {
+  display: flex;
+}
+.topSelling-plants .info h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--dark);
+  margin: 0;
+}
+.topSelling-plants .info p {
+  padding: 0;
+  margin: 0;
+  width: 196px;
+  height: 81px;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--light-font);
+  padding-top: 12px;
+}
+.topSelling-plants .info .btn.light {
+  position: relative;
+  display: block;
+  margin-top: 24px;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--dark);
+}
+.topSelling-plants .info .btn.light::after {
+  position: absolute;
+  content: url(img/ArrowRight.svg);
+  width: 24px;
+  height: 20px;
+  padding-left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.plant-cards {
+  gap: 48px;
+}
+.plant-cards .plant-card img {
+  border-radius: 12px;
+  width: 299.33px;
+  height: 363px;
+  margin: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+.plant-cards .plant-card p:first-child {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--dark);
+  padding-top: 12px;
+}
+.plant-card p:last-child {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--light-font);
+  padding-top: 12px;
+  padding-bottom: 113px;
+}
+
+/* About Us */
+.about-us {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  height: 512px;
+}
+.about-us .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+}
+.about-us .title p:first-child {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  color: var(--dark);
+  margin: 0;
+}
+.about-us .title p:last-child {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--light-font);
+  margin: 0;
+}
+.aboutUs-cards {
+  display: flex;
+  gap: 24px;
+}
+.aboutUs-card {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.aboutUs-card p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+}
+.aboutUs-card p:last-child {
+  width: 400px;
+  height: 54px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: var(--light-font);
+}
+
+#round-1,#round-2,#round-3 {
+  background-color: var(--primary);
+  width: 96px;
+  height: 96px;
+  border-radius: 100%;
+  z-index: -1;
+  position: relative;
+}
+.aboutUs-card #round-1::before {
+  content: url(img/plant-vector.svg);
+  position: absolute;
+  top: 28%;
+  left: 28%;
+
+}
+.aboutUs-card #round-2::before {
+  content: url(img/box-vector.svg);
+  position: absolute;
+  top: 28%;
+  left: 28%;
+}
+.aboutUs-card #round-3::before {
+  content: url(img/call-vector.svg);
+  position: absolute;
+  top: 28%;
+  left: 28%;
+}
