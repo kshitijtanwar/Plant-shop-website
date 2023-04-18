@@ -7,6 +7,7 @@ html{
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
+  /* width: 100vw; */
 }
 
 :root {
@@ -477,33 +478,42 @@ p {
   /* margin-bottom: 230px; */
 }
 .review-card {
-  position: relative;
-  width: 800px;
-  height: 330px;
+  /* position: relative; */
+  min-width: 800px;
+  min-height: 330px;
+  display: flex;
+  flex-direction: column;
 }
 .lower {
   display: flex;
-  margin-top: 54px;
-  flex-grow: 1;
+  /* margin-top: 54px; */
+  flex-grow: 1;   
 }
 .lower .info {
   display: flex;
   flex-direction: column;
   flex-basis: 34rem;
 }
+
+.aligner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* min-height: 100px; */
+  flex-grow: 1;
+}
 .testimonial .review-card {
   background: var(--primary);
   border-radius: 12px;
 }
 .review-card .content {
-  padding: 48px 48px 0px 48px;
+  padding: 35px 40px;
 }
 .lower img {
   padding: 0;
   margin: 0;
   z-index: 5;
   position: relative;
-  top: -59px;
 }
 .guy-2 {
   top: -46px !important;
@@ -519,11 +529,13 @@ p {
 }
 .lower .rating::before {
   content: url(img/Star.svg);
+  display: flex;
+  align-items: center;
 }
 .review-card img:last-child {
   position: absolute;
-  top: 58%;
-  left: 5%;
+  top: 54%;
+  left: 2%;
   z-index: 4;
 }
 .lower span:first-child {
@@ -554,7 +566,10 @@ p {
 }
 .testimonial {
   position: absolute;
-  height: 880px;
+  height: 800px;
+  /* width: 100vw;
+  overflow-x: scroll;
+  padding-bottom: 2rem; */
 }
 .extra {
   position: absolute;
